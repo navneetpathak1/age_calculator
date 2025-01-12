@@ -1,0 +1,93 @@
+/* General reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.calculator h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.calculator h1 span {
+    color: #6a11cb;
+}
+
+/* Input box styling */
+.input-box {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-box label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    transition: 0.3s ease;
+}
+
+.input-box input:focus {
+    border: 1px solid #6a11cb;
+    outline: none;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.5);
+}
+
+.input-box button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background: #6a11cb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.input-box button:hover {
+    background: #2575fc;
+    box-shadow: 0 4px 10px rgba(37, 117, 252, 0.4);
+}
+
+/* Result styling */
+#result {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+#result strong {
+    color: #6a11cb;
+}
+
+#result .error {
+    color: #ff4d4d;
+    font-weight: bold;
+}
